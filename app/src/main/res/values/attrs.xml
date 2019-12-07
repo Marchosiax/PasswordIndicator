@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PasswordIndicator">
+        <attr name="count" format="integer" />
+        <attr name="radius" format="dimension" />
+        <attr name="ringMargin" format="dimension" />
+        <attr name="fillMargin" format="dimension" />
+        <attr name="ringStroke" format="dimension" />
+        <attr name="ringColor" format="color" />
+        <attr name="fillColor" format="color" />
+    </declare-styleable>
+
+</resources>
