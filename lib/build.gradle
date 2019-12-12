@@ -1,6 +1,23 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+
+    def groupProjectID = 'com.marchosiax.libs'
+    def artifactProjectID = 'passindicator'
+    def publishVersionID = '0.1'
+
+    userOrg = 'marchosiax'
+    repoName = 'PasswordIndicator'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Simple password indicator'
+    website = 'https://github.com/Marchosiax/PasswordIndicator'
+
+}
 
 android {
     compileSdkVersion 29
@@ -19,6 +36,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    lintOptions {
+        abortOnError false
     }
 }
 
